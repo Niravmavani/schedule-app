@@ -80,9 +80,6 @@ const Celender = () => {
                 <div className="w-[1100px]">
                   <hr />
                 </div>
-                <div className="w-[1100px]">
-                  <hr />
-                </div>
               </div>
               <div className="h-[60px]">
                 14-15

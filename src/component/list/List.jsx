@@ -33,7 +33,7 @@ const List = () => {
   const [description, setDescription] = useState("");
   const [starttime, setStartTime] = useState("");
   const [endtime, setEndTime] = useState("");
-  const [day, setDay] = useState("");
+  const [day, setDay] = useState("Sunday");
 
   useEffect(() => {
     const storedData = localStorage.getItem("data");
@@ -193,6 +193,7 @@ const List = () => {
                       name="starttime"
                       id="starttime"
                       className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                      placeholder="00:00"
                       required
                       onChange={(e) => setStartTime(e.target.value)}
                     />
@@ -209,6 +210,7 @@ const List = () => {
                       name="endtime"
                       id="endtime"
                       className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                      placeholder="00:00"
                       required
                       onChange={(e) => setEndTime(e.target.value)}
                     />
