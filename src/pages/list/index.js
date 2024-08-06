@@ -1,9 +1,13 @@
 import List from "@/component/list/List";
 
-export default function Home() {
+import React from "react";
+
+const index = () => {
   return (
     <div>
       <List />
     </div>
   );
-}
+};
+
+export default index;
